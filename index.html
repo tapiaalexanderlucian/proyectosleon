@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Gimnasio - Transforma Tu Cuerpo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="instagram-config.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.reload()"
+            style="flex-shrink: 0; display: flex; align-items: center; gap: 10px;"><img
+                src="imgenes/Captura de pantalla 2026-01-23 175220.png" alt="Zenith Gimnasio"
+                style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">Zenith Gimnasio</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="#inicio"><i class="fa-solid fa-house menu-icon"></i> Inicio</a></li>
+            <li><a href="#slider-section"><i class="fa-solid fa-camera menu-icon"></i> Galería</a></li>
+            <li><a href="#instagram-section"><i class="fa-brands fa-instagram menu-icon"></i> Instagram</a></li>
+            <li><a href="#planes"><i class="fa-solid fa-gem menu-icon"></i> Planes</a></li>
+            <li><a href="#testimonios"><i class="fa-solid fa-star menu-icon"></i> Testimonios</a></li>
+            <li><a href="#contacto"><i class="fa-solid fa-phone menu-icon"></i> Contacto</a></li>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-section-title">Soporte</div>
+                <li><a href="#contacto" onclick="scrollToSection(event, 'contacto')"><i
+                            class="fa-solid fa-circle-question menu-icon"></i> Centro de Ayuda</a></li>
+                <li><a href="#contacto" onclick="scrollToSection(event, 'contacto')"><i
+                            class="fa-solid fa-comments menu-icon"></i> Preguntas Frecuentes</a></li>
+                <li><a href="#horarios-section" onclick="scrollToSection(event, 'horarios-section')"><i
+                            class="fa-solid fa-clock menu-icon"></i> Horarios</a></li>
+                <li><a href="#contacto" onclick="scrollToSection(event, 'contacto')"><i
+                            class="fa-solid fa-location-dot menu-icon"></i> Ubicación</a></li>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-section-title">Síguenos</div>
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/zenith_gymoficial/" target="_blank"><i
+                            class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@wellnesszenith" target="_blank"><i class="fab fa-tiktok"></i>
+                        TikTok</a></li>
+            </div>
+        </ul>
+        <button class="login-button" onclick="alert('Sistema de ingreso próximamente')"
+            style="flex-shrink: 0;">Ingresar</button>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" style="flex-shrink: 0;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="hero-slider-container">
+            <div class="slider" id="heroSlider">
+                <div class="hero-slide">
+                    <img src="imgenes/DSC_0412.jpeg" alt="Instalación 1">
+                    <div class="hero-overlay">
+                        <h1>Transforma Tu Cuerpo</h1>
+                        <p>El cambio comienza hoy. Únete a Zenith Gimnasio</p>
+                        <button class="cta-button"
+                            onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Comenzar
+                            Ahora</button>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="imgenes/DSC_0428.jpeg" alt="Instalación 2">
+                    <div class="hero-overlay">
+                        <h1>Instalaciones de Clase Mundial</h1>
+                        <p>Equipo de última generación y ambiente motivador</p>
+                        <button class="cta-button"
+                            onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Conocer
+                            Más</button>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="imgenes/DSC_0402.jpeg" alt="Instalación 3">
+                    <div class="hero-overlay">
+                        <h1>Alcanza Tus Metas</h1>
+                        <p>Con entrenadores certificados y programas personalizados</p>
+                        <button class="cta-button"
+                            onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Comenzar
+                            Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slider-nav" id="heroSliderNav"></div>
+        </div>
+    </section>
+
+    <section id="slider-section">
+        <h2>Nuestras Instalaciones</h2>
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <img src="imgenes/DSC_0412.jpeg" alt="Instalación 1">
+                </div>
+                <div class="slide">
+                    <img src="imgenes/DSC_0428.jpeg" alt="Instalación 2">
+                </div>
+                <div class="slide">
+                    <img src="imgenes/DSC_0402.jpeg" alt="Instalación 3">
+                </div>
+            </div>
+            <div class="slider-nav" id="sliderNav"></div>
+        </div>
+    </section>
+
+    <section id="instagram-section">
+        <h2>Síguenos en Instagram</h2>
+        <p class="instagram-subtitle">Descubre las últimas publicaciones de Zenith Gimnasio</p>
+        <div class="instagram-grid" id="instagramFeed">
+            <div class="instagram-post-skeleton">
+                <div class="skeleton-placeholder"></div>
+            </div>
+            <div class="instagram-post-skeleton">
+                <div class="skeleton-placeholder"></div>
+            </div>
+            <div class="instagram-post-skeleton">
+                <div class="skeleton-placeholder"></div>
+            </div>
+            <div class="instagram-post-skeleton">
+                <div class="skeleton-placeholder"></div>
+            </div>
+            <div class="instagram-post-skeleton">
+                <div class="skeleton-placeholder"></div>
+            </div>
+            <div class="instagram-post-skeleton">
+                <div class="skeleton-placeholder"></div>
+            </div>
+        </div>
+        <div class="instagram-cta">
+            <a href="https://www.instagram.com/zenith_gymoficial/" target="_blank" class="cta-button">
+                <i class="fab fa-instagram"></i> Seguir en Instagram
+            </a>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería de Fotos</h2>
+        <div class="photo-gallery">
+            <div class="photo-item" style="background-image: url('imgenes/DSC00416-Mejorado-Nr.jpeg');"
+                onclick="openModal('imgenes/DSC00416-Mejorado-Nr.jpeg')"></div>
+            <div class="photo-item" style="background-image: url('imgenes/DSC00434-Mejorado-NR.jpeg');"
+                onclick="openModal('imgenes/DSC00434-Mejorado-NR.jpeg')"></div>
+            <div class="photo-item" style="background-image: url('imgenes/DSC00451-Mejorado-NR.jpeg');"
+                onclick="openModal('imgenes/DSC00451-Mejorado-NR.jpeg')"></div>
+            <div class="photo-item" style="background-image: url('imgenes/DSC00482-Mejorado-NR.jpeg');"
+                onclick="openModal('imgenes/DSC00482-Mejorado-NR.jpeg')"></div>
+        </div>
+    </section>
+
+    <!-- Modal para ver imágenes en grande -->
+    <div id="photoModal" class="photo-modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modalImage" src="" alt="Foto ampliada">
+            <button class="close-button" onclick="closeModal()">&times;</button>
+        </div>
+    </div>
+
+    <section id="planes">
+        <h2>Nuestros Planes</h2>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h3>Básico</h3>
+                <div class="price">S/.80<span>/mes</span></div>
+                <ul>
+                    <li>Acceso al gimnasio</li>
+                    <li>Vestuarios y duchas</li>
+                    <li>Asesoría inicial</li>
+                    <li>Horario flexible</li>
+                </ul>
+                <button class="cta-button">Elegir Plan</button>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Premium</h3>
+                <div class="price">S/.150<span>/mes</span></div>
+                <ul>
+                    <li>Todo lo del plan básico</li>
+                    <li>Clases grupales ilimitadas</li>
+                    <li>Entrenador personal 2x/mes</li>
+                    <li>Acceso a spa y sauna</li>
+                    <li>Plan nutricional</li>
+                </ul>
+                <button class="cta-button">Elegir Plan</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Elite</h3>
+                <div class="price">S/.200<span>/mes</span></div>
+                <ul>
+                    <li>Todo lo del plan premium</li>
+                    <li>Entrenador personal ilimitado</li>
+                    <li>Masajes deportivos</li>
+                    <li>Acceso 24/7</li>
+                    <li>Invitado gratis</li>
+                </ul>
+                <button class="cta-button">Elegir Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <img src="imgenes/testimonial_1_1769041512683.png" alt="María González" class="testimonial-image">
+                <p>"Zenith Gimnasio cambió mi vida completamente. Bajé 15 kilos en 3 meses y me siento increíble. Los
+                    entrenadores son excepcionales."</p>
+                <div class="testimonial-author">- María González</div>
+            </div>
+            <div class="testimonial-card">
+                <img src="imgenes/testimonial_2_1769041531136.png" alt="Carlos Ramírez" class="testimonial-image">
+                <p>"El mejor gimnasio de la ciudad. Instalaciones de primera, ambiente motivador y resultados
+                    garantizados. 100% recomendado."</p>
+                <div class="testimonial-author">- Carlos Ramírez</div>
+            </div>
+            <div class="testimonial-card">
+                <img src="imgenes/testimonial_3_1769041547776.png" alt="Ana Martínez" class="testimonial-image">
+                <p>"Después de probar varios gimnasios, finalmente encontré mi lugar en Zenith Gimnasio. La atención
+                    personalizada marca la diferencia."</p>
+                <div class="testimonial-author">- Ana Martínez</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Horario</h2>
+        <div class="schedule-info" id="horarios-section">
+            <h3>Horario de Atención</h3>
+            <p>4:00 PM - 6:30 PM</p>
+            <p style="margin-top: 1rem; font-size: 1.2rem; color: #999;">Lunes a Domingo</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Únete Ahora</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="plan">Plan de Interés</label>
+                    <select id="plan" required>
+                        <option value="">Selecciona un plan</option>
+                        <option value="basico">Básico - S/.80/mes</option>
+                        <option value="premium">Premium - S/.150/mes</option>
+                        <option value="elite">Elite - S/.200/mes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (Opcional)</label>
+                    <textarea id="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta-button" style="width: 100%;">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zenith Gimnasio</h3>
+                <p>Transforma tu cuerpo, transforma tu vida. Somos el gimnasio líder en Huancayo con las mejores
+                    instalaciones y entrenadores certificados.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" title="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/zenith_gymoficial/" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@wellnesszenith" target="_blank" title="TikTok"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#planes">Planes y Precios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horarios</h3>
+                <ul>
+                    <li>Lunes - Viernes: 4:00 PM - 6:30 PM</li>
+                    <li>Sábados: 4:00 PM - 6:30 PM</li>
+                    <li>Domingos: 4:00 PM - 6:30 PM</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot footer-icon"></i> Jr. Junin 991-El Tambo, Huancayo</li>
+                    <li><i class="fa-solid fa-phone footer-icon"></i> +51 920363217</li>
+                    <li><i class="fa-solid fa-envelope footer-icon"></i> info@gimnasio-zenith.pe</li>
+                    <li><i class="fa-solid fa-globe footer-icon"></i> www.gimnasio-zenith.pe</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zenith Gimnasio. Todos los derechos reservados.</p>
+            <p>Diseñado con pasión por el fitness | Política de Privacidad | Términos y Condiciones</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hero Slider functionality
+        let currentHeroSlide = 0;
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const heroSlider = document.getElementById('heroSlider');
+        const heroSliderNav = document.getElementById('heroSliderNav');
+
+        // Create hero navigation dots
+        heroSlides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('slider-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToHeroSlide(index));
+            heroSliderNav.appendChild(dot);
+        });
+
+        function goToHeroSlide(n) {
+            currentHeroSlide = n;
+            heroSlider.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
+            updateHeroDots();
+        }
+
+        function updateHeroDots() {
+            document.querySelectorAll('.hero-slider-nav .slider-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentHeroSlide);
+            });
+        }
+
+        function nextHeroSlide() {
+            currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+            goToHeroSlide(currentHeroSlide);
+        }
+
+        // Auto-advance hero slider
+        setInterval(nextHeroSlide, 5000);
+
+        // Slider functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('#slider-section .slide');
+        const slider = document.getElementById('slider');
+        const sliderNav = document.getElementById('sliderNav');
+
+        // Create navigation dots
+        if (slides.length > 0) {
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('slider-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                sliderNav.appendChild(dot);
+            });
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            updateDots();
+        }
+
+        function updateDots() {
+            document.querySelectorAll('#sliderNav .slider-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            goToSlide(currentSlide);
+        }
+
+        // Auto-advance slider
+        if (slides.length > 0) {
+            setInterval(nextSlide, 4000);
+        }
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinksMobile = document.getElementById('navLinksMobile');
+            const hamburger = document.getElementById('hamburger');
+            navLinksMobile.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Scroll to section function
+        function scrollToSection(event, sectionId) {
+            event.preventDefault();
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - navHeight - 20;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu
+                const navLinksMobile = document.getElementById('navLinksMobile');
+                const hamburger = document.getElementById('hamburger');
+                navLinksMobile.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        }
+
+        // Login function
+        function loginUser() {
+            alert('🔐 Sistema de Inicio de Sesión\n\nPróximamente podrás acceder a:\n• Tu perfil personal\n• Historial de entrenamientos\n• Reserva de clases\n• Plan nutricional\n• Y mucho más...');
+        }
+
+        // Register function
+        function registerUser() {
+            alert('✨ Registro de Nuevos Miembros\n\n¡Únete a la familia Zenith Gimnasio!\n\nBeneficios al registrarte:\n• Acceso a todas las instalaciones\n• Plan de entrenamiento personalizado\n• Seguimiento de progreso\n• Descuentos exclusivos\n\nContáctanos para más información.');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (event) {
+            const navLinksMobile = document.getElementById('navLinksMobile');
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.querySelector('nav');
+
+            if (!nav.contains(event.target) && navLinksMobile.classList.contains('active')) {
+                navLinksMobile.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('¡Gracias por tu interés! Te contactaremos pronto.');
+                e.target.reset();
+            });
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    const navLinksMobile = document.getElementById('navLinksMobile');
+                    const hamburger = document.getElementById('hamburger');
+                    navLinksMobile.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        // Funciones para el modal de galería
+        function openModal(imageSrc) {
+            const modal = document.getElementById('photoModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('photoModal');
+            modal.classList.remove('active');
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Cargar posts de Instagram
+        async function loadInstagramFeed() {
+            const feedContainer = document.getElementById('instagramFeed');
+
+            try {
+                // Si no hay posts configurados, mostrar mensaje
+                if (!INSTAGRAM_POSTS || INSTAGRAM_POSTS.length === 0) {
+                    feedContainer.innerHTML = `
+                        <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--text-muted);">
+                            <p>Configura los posts de Instagram en instagram-config.js</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                feedContainer.innerHTML = '';
+
+                // Procesar cada post
+                INSTAGRAM_POSTS.forEach((post, index) => {
+                    const postElement = document.createElement('div');
+                    postElement.className = 'instagram-post';
+
+                    // Extraer el ID del post del URL
+                    const postId = post.url.match(/\/p\/([^\/]+)\//)?.[1];
+
+                    // Usar embeds de Instagram o URL directo
+                    const imageUrl = postId ?
+                        `https://www.instagram.com/p/${postId}/media/?size=l` :
+                        `imgenes/DSC_0412.jpeg`;
+
+                    postElement.innerHTML = `
+                        <img src="${imageUrl}" alt="${post.caption}" onerror="this.src='imgenes/DSC_0412.jpeg'">
+                        <div class="instagram-post-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    `;
+
+                    postElement.addEventListener('click', () => {
+                        window.open(post.url, '_blank');
+                    });
+
+                    feedContainer.appendChild(postElement);
+                });
+            } catch (error) {
+                console.error('Error cargando Instagram feed:', error);
+                // Fallback a imágenes locales
+                feedContainer.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--text-muted);">
+                        <p>Error cargando las publicaciones. Intenta más tarde.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Cargar Instagram feed cuando el DOM esté listo
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadInstagramFeed);
+        } else {
+            loadInstagramFeed();
+        }
+    </script>
+</body>
+
+</html>
