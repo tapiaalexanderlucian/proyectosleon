@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Objetivo - Zenith Gimnasio</title>
+    <link rel="icon" type="image/png" href="imgenes/favicon-circle.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'"
+            style="flex-shrink: 0; display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <img src="imgenes/Captura de pantalla 2026-01-23 175220.png" alt="Zenith Gimnasio"
+                style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">Zenith Gimnasio
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="index.html#planes">Planes</a></li>
+            <li><a href="disciplinas.html">Disciplinas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="index.html#inicio"><i class="fa-solid fa-house menu-icon"></i> Inicio</a></li>
+            <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users menu-icon"></i> Sobre Nosotros</a></li>
+            <li><a href="objetivo.html"><i class="fa-solid fa-bullseye menu-icon"></i> Nuestro Objetivo</a></li>
+            <li><a href="index.html#planes"><i class="fa-solid fa-gem menu-icon"></i> Planes</a></li>
+            <li><a href="disciplinas.html"><i class="fa-solid fa-dumbbell menu-icon"></i> Disciplinas</a></li>
+        </ul>
+        <button class="login-button" onclick="alert('Sistema de ingreso próximamente')"
+            style="flex-shrink: 0;">Ingresar</button>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" style="flex-shrink: 0;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero"
+        style="background: linear-gradient(135deg, rgba(26, 15, 8, 0.95), rgba(45, 24, 16, 0.9)), url('imgenes/Captura de pantalla 2026-01-23 175220.png'); background-size: cover; background-position: center;">
+        <div class="page-hero-content">
+            <h1>Nuestro Objetivo</h1>
+            <p>La misión que nos impulsa cada día</p>
+        </div>
+    </section>
+
+    <!-- Misión -->
+    <section style="padding: 5rem 5%; background: var(--darker-color);">
+        <div class="content-container">
+            <div class="text-center-section">
+                <span class="about-badge">🎯 Nuestra Misión</span>
+                <h2 class="about-title" style="text-align: center; margin: 2rem 0;">
+                    Transformar Vidas a Través del <span class="highlight">Fitness y el Bienestar</span>
+                </h2>
+                <p
+                    style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8; color: var(--text-light);">
+                    En Zenith Gimnasio, nuestra misión es proporcionar un ambiente acogedor e inspirador donde cada
+                    miembro pueda alcanzar su máximo potencial físico y mental. Creemos que el fitness no es solo sobre
+                    levantar pesas o correr en una cinta, es sobre construir confianza, disciplina y una mentalidad
+                    ganadora.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos Clave -->
+    <section style="padding: 5rem 5%; background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Nuestros Objetivos Clave</h2>
+        <div class="objectives-grid">
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+                <h3>Resultados Reales</h3>
+                <p>Ayudar a nuestros miembros a alcanzar resultados tangibles y duraderos mediante programas
+                    personalizados y seguimiento continuo.</p>
+            </div>
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <h3>Comunidad Fuerte</h3>
+                <p>Crear una comunidad inclusiva donde cada persona se sienta bienvenida, apoyada y motivada para
+                    superar sus límites.</p>
+            </div>
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Educación Continua</h3>
+                <p>Proporcionar conocimientos sobre nutrición, técnicas de entrenamiento y hábitos saludables para un
+                    bienestar integral.</p>
+            </div>
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Experiencia Única</h3>
+                <p>Ofrecer instalaciones de primera clase y un servicio excepcional que supere las expectativas.</p>
+            </div>
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fa-solid fa-arrows-up-to-line"></i>
+                </div>
+                <h3>Crecimiento Personal</h3>
+                <p>Inspirar a cada miembro a descubrir y alcanzar su verdadero potencial más allá del gimnasio.</p>
+            </div>
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3>Salud Integral</h3>
+                <p>Promover un enfoque holístico que incluya ejercicio, nutrición, descanso y bienestar mental.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visión -->
+    <section style="padding: 5rem 5%; background: var(--darker-color);">
+        <div class="content-container">
+            <div class="about-grid" style="align-items: center;">
+                <div class="about-image-container">
+                    <img src="imgenes/DSC_0359.jpeg" alt="Visión Zenith" class="about-image">
+                </div>
+                <div class="about-content">
+                    <span class="about-badge">🔭 Nuestra Visión</span>
+                    <h2 class="about-title">Ser el Gimnasio Líder de <span class="highlight">Huancayo</span></h2>
+                    <p class="about-description">
+                        Aspiramos a ser reconocidos como el gimnasio número uno en Huancayo, no solo por nuestras
+                        instalaciones de clase mundial, sino por el impacto positivo que generamos en la vida de
+                        nuestros miembros.
+                    </p>
+                    <p class="about-description">
+                        Queremos expandir nuestra comunidad, crear más conexiones significativas y seguir innovando en
+                        la forma en que las personas abordan su salud y fitness.
+                    </p>
+                    <button class="cta-button" onclick="window.location.href='contacto.html'">
+                        Únete a Nuestra Visión <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compromiso -->
+    <section
+        style="padding: 5rem 5%; background: linear-gradient(135deg, var(--primary-color), var(--light-color)); text-align: center;">
+        <h2
+            style="color: #2d1810; margin-bottom: 2rem; font-weight: 900; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); position: relative; z-index: 10;">
+            Nuestro Compromiso Contigo</h2>
+        <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 10;">
+            <p style="color: #1a0f08; font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; font-weight: 700;">
+                Nos comprometemos a estar contigo en cada paso de tu viaje fitness. Desde el primer día hasta cuando
+                alcances tus metas más ambiciosas, estaremos ahí para apoyarte, motivarte y celebrar contigo.
+            </p>
+            <p style="color: #000000; font-size: 1.4rem; font-weight: 700;">
+                "Tu éxito es nuestro éxito"
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zenith Gimnasio</h3>
+                <p>Transforma tu cuerpo, transforma tu vida.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/zenith_gymoficial/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@wellnesszenith" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="objetivo.html">Nuestro Objetivo</a></li>
+                    <li><a href="disciplinas.html">Disciplinas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Huancayo, Perú</p>
+                <p><i class="fa-solid fa-clock"></i> Lun - Dom: 4:00 PM - 6:30 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zenith Gimnasio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            const navLinksMobile = document.getElementById('navLinksMobile');
+            const hamburger = document.getElementById('hamburger');
+            navLinksMobile.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
