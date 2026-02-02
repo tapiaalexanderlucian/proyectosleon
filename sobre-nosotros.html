@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Zenith Gimnasio</title>
+    <link rel="icon" type="image/png" href="imgenes/favicon-circle.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'"
+            style="flex-shrink: 0; display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <img src="imgenes/Captura de pantalla 2026-01-23 175220.png" alt="Zenith Gimnasio"
+                style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">Zenith Gimnasio
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
+            <li><a href="index.html#planes">Planes</a></li>
+            <li><a href="disciplinas.html">Disciplinas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="index.html#inicio"><i class="fa-solid fa-house menu-icon"></i> Inicio</a></li>
+            <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users menu-icon"></i> Sobre Nosotros</a></li>
+            <li><a href="objetivo.html"><i class="fa-solid fa-bullseye menu-icon"></i> Nuestro Objetivo</a></li>
+            <li><a href="index.html#planes"><i class="fa-solid fa-gem menu-icon"></i> Planes</a></li>
+            <li><a href="disciplinas.html"><i class="fa-solid fa-dumbbell menu-icon"></i> Disciplinas</a></li>
+        </ul>
+        <button class="login-button" onclick="alert('Sistema de ingreso próximamente')"
+            style="flex-shrink: 0;">Ingresar</button>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" style="flex-shrink: 0;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero"
+        style="background: linear-gradient(135deg, rgba(26, 15, 8, 0.95), rgba(45, 24, 16, 0.9)), url('imgenes/DSC_0428.jpeg'); background-size: cover; background-position: center;">
+        <div class="page-hero-content">
+            <h1>Sobre Nosotros</h1>
+            <p>Conoce la historia y valores que nos impulsan</p>
+        </div>
+    </section>
+
+    <!-- Nuestra Historia -->
+    <section style="padding: 5rem 5%; background: var(--darker-color);">
+        <div class="content-container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="about-badge">✨ Nuestra Historia</span>
+                    <h2 class="about-title">Más de <span class="highlight">5 Años</span> Transformando Vidas</h2>
+                    <p class="about-description">
+                        Zenith Gimnasio nació en 2019 con una visión clara: crear un espacio donde cada persona, sin
+                        importar su nivel de condición física, pudiera alcanzar su máximo potencial. Fundado en el
+                        corazón de Huancayo, nos hemos convertido en el gimnasio líder de la región.
+                    </p>
+                    <p class="about-description">
+                        Lo que comenzó como un pequeño gimnasio local ha crecido hasta convertirse en una comunidad de
+                        más de 500 miembros activos que comparten la pasión por la salud y el bienestar.
+                    </p>
+                </div>
+                <div class="about-image-container">
+                    <img src="imgenes/Captura de pantalla 2026-01-23 175220.png" alt="Zenith Gimnasio"
+                        class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Valores -->
+    <section style="padding: 5rem 5%; background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Nuestros Valores</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <i class="fa-solid fa-heart"
+                    style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>Pasión</h3>
+                <p>Amamos lo que hacemos y nos dedicamos al 100% a ayudarte a alcanzar tus metas.</p>
+            </div>
+            <div class="value-card">
+                <i class="fa-solid fa-users"
+                    style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>Comunidad</h3>
+                <p>Creemos en el poder del apoyo mutuo y en crear conexiones duraderas.</p>
+            </div>
+            <div class="value-card">
+                <i class="fa-solid fa-trophy"
+                    style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>Excelencia</h3>
+                <p>Nos esforzamos por ofrecer el mejor servicio y las mejores instalaciones.</p>
+            </div>
+            <div class="value-card">
+                <i class="fa-solid fa-lightbulb"
+                    style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>Innovación</h3>
+                <p>Constantemente actualizamos nuestros métodos y equipamiento para ofrecerte lo mejor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section style="padding: 5rem 5%; background: var(--darker-color);">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Nuestro Equipo</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-image"
+                    style="background: linear-gradient(135deg, var(--primary-color), var(--light-color)); height: 250px; border-radius: 15px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-user" style="font-size: 5rem; color: var(--dark-color);"></i>
+                </div>
+                <h3>Entrenadores Certificados</h3>
+                <p>Todos nuestros entrenadores cuentan con certificaciones internacionales y años de experiencia.</p>
+            </div>
+            <div class="team-card">
+                <div class="team-image"
+                    style="background: linear-gradient(135deg, var(--primary-color), var(--light-color)); height: 250px; border-radius: 15px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-apple-whole" style="font-size: 5rem; color: var(--dark-color);"></i>
+                </div>
+                <h3>Nutricionistas Expertos</h3>
+                <p>Diseñamos planes nutricionales personalizados para complementar tu entrenamiento.</p>
+            </div>
+            <div class="team-card">
+                <div class="team-image"
+                    style="background: linear-gradient(135deg, var(--primary-color), var(--light-color)); height: 250px; border-radius: 15px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-hand-holding-heart" style="font-size: 5rem; color: var(--dark-color);"></i>
+                </div>
+                <h3>Personal de Apoyo</h3>
+                <p>Un equipo dedicado a hacer de tu experiencia la mejor posible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+        style="padding: 5rem 5%; background: linear-gradient(135deg, var(--primary-color), var(--light-color)); text-align: center;">
+        <h2
+            style="color: #2d1810; margin-bottom: 1.5rem; font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); position: relative; z-index: 10;">
+            ¿Listo
+            para
+            Unirte a Nuestra Familia?</h2>
+        <p
+            style="color: #1a0f08; margin-bottom: 2rem; font-size: 1.2rem; font-weight: 700; position: relative; z-index: 10;">
+            Comienza tu transformación
+            hoy</p>
+        <button class="cta-button" onclick="window.location.href='contacto.html'"
+            style="background: #3d2414; color: var(--primary-color);">
+            Únete Ahora <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zenith Gimnasio</h3>
+                <p>Transforma tu cuerpo, transforma tu vida.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/zenith_gymoficial/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@wellnesszenith" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="objetivo.html">Nuestro Objetivo</a></li>
+                    <li><a href="disciplinas.html">Disciplinas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Huancayo, Perú</p>
+                <p><i class="fa-solid fa-clock"></i> Lun - Dom: 4:00 PM - 6:30 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zenith Gimnasio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            const navLinksMobile = document.getElementById('navLinksMobile');
+            const hamburger = document.getElementById('hamburger');
+            navLinksMobile.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
