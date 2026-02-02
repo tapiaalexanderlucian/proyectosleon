@@ -22,15 +22,21 @@
             <li><a href="#galeria">Galería</a></li>
             <li><a href="#planes">Planes</a></li>
             <li><a href="#testimonios">Testimonios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
         <ul class="nav-links-mobile" id="navLinksMobile">
-            <li><a href="#inicio"><i class="fa-solid fa-house menu-icon"></i> Inicio</a></li>
-            <li><a href="#slider-section"><i class="fa-solid fa-camera menu-icon"></i> Galería</a></li>
-            <li><a href="#instagram-section"><i class="fa-brands fa-instagram menu-icon"></i> Instagram</a></li>
-            <li><a href="#planes"><i class="fa-solid fa-gem menu-icon"></i> Planes</a></li>
-            <li><a href="#testimonios"><i class="fa-solid fa-star menu-icon"></i> Testimonios</a></li>
-            <li><a href="#contacto"><i class="fa-solid fa-phone menu-icon"></i> Contacto</a></li>
+            <li><a href="index.html#inicio"><i class="fa-solid fa-house menu-icon"></i> Inicio</a></li>
+            <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users menu-icon"></i> Sobre Nosotros</a></li>
+            <li><a href="objetivo.html"><i class="fa-solid fa-bullseye menu-icon"></i> Nuestro Objetivo</a></li>
+            <li><a href="#slider-section" onclick="scrollToSection(event, 'slider-section')"><i
+                        class="fa-solid fa-camera menu-icon"></i> Galería</a></li>
+            <li><a href="#instagram-section" onclick="scrollToSection(event, 'instagram-section')"><i
+                        class="fa-brands fa-instagram menu-icon"></i> Instagram</a></li>
+            <li><a href="#planes" onclick="scrollToSection(event, 'planes')"><i class="fa-solid fa-gem menu-icon"></i>
+                    Planes</a></li>
+            <li><a href="disciplinas.html"><i class="fa-solid fa-dumbbell menu-icon"></i> Disciplinas</a></li>
+            <li><a href="#testimonios" onclick="scrollToSection(event, 'testimonios')"><i
+                        class="fa-solid fa-star menu-icon"></i> Testimonios</a></li>
 
             <div class="mobile-nav-section">
                 <div class="mobile-nav-section-title">Soporte</div>
@@ -67,22 +73,20 @@
         <div class="hero-slider-container">
             <div class="slider" id="heroSlider">
                 <div class="hero-slide">
-                    <img src="imgenes/DSC_0412.jpeg" alt="Instalación 1">
+                    <img src="imgenes/DSC_0359.jpeg" alt="Instalación 1">
                     <div class="hero-overlay">
                         <h1>Transforma Tu Cuerpo</h1>
                         <p>El cambio comienza hoy. Únete a Zenith Gimnasio</p>
-                        <button class="cta-button"
-                            onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Comenzar
+                        <button class="cta-button" onclick="window.location.href='contacto.html'">Comenzar
                             Ahora</button>
                     </div>
                 </div>
                 <div class="hero-slide">
-                    <img src="imgenes/DSC_0428.jpeg" alt="Instalación 2">
+                    <img src="imgenes/uno.jpeg" alt="Instalación 2">
                     <div class="hero-overlay">
                         <h1>Instalaciones de Clase Mundial</h1>
                         <p>Equipo de última generación y ambiente motivador</p>
-                        <button class="cta-button"
-                            onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Conocer
+                        <button class="cta-button" onclick="window.location.href='contacto.html'">Conocer
                             Más</button>
                     </div>
                 </div>
@@ -91,13 +95,61 @@
                     <div class="hero-overlay">
                         <h1>Alcanza Tus Metas</h1>
                         <p>Con entrenadores certificados y programas personalizados</p>
-                        <button class="cta-button"
-                            onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Comenzar
+                        <button class="cta-button" onclick="window.location.href='contacto.html'">Comenzar
                             Ahora</button>
                     </div>
                 </div>
             </div>
             <div class="hero-slider-nav" id="heroSliderNav"></div>
+        </div>
+    </section>
+
+    <!-- Logo Carousel Section (Phoenix-style) -->
+    <section class="logo-carousel-section">
+        <div class="logo-carousel-container">
+            <div class="logo-carousel">
+                <!-- Repetir 4 veces para loop perfecto -->
+                <div class="logo-carousel-item">
+                    <span class="carousel-text">ZENITH GIMNASIO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN BÁSICO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN PREMIUM</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN ELITE</span>
+                    <div class="logo-dot"></div>
+                </div>
+                <div class="logo-carousel-item">
+                    <span class="carousel-text">ZENITH GIMNASIO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN BÁSICO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN PREMIUM</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN ELITE</span>
+                    <div class="logo-dot"></div>
+                </div>
+                <div class="logo-carousel-item">
+                    <span class="carousel-text">ZENITH GIMNASIO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN BÁSICO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN PREMIUM</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN ELITE</span>
+                    <div class="logo-dot"></div>
+                </div>
+                <div class="logo-carousel-item">
+                    <span class="carousel-text">ZENITH GIMNASIO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN BÁSICO</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN PREMIUM</span>
+                    <div class="logo-dot"></div>
+                    <span class="carousel-text">PLAN ELITE</span>
+                    <div class="logo-dot"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -116,6 +168,32 @@
                 </div>
             </div>
             <div class="slider-nav" id="sliderNav"></div>
+        </div>
+    </section>
+
+    <!-- About Us Section (Phoenix-style) -->
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-content">
+                <span class="about-badge">✨ Sobre Nosotros</span>
+                <h2 class="about-title">
+                    Transforma Tu Vida Con <span class="highlight">Zenith Gimnasio</span>
+                </h2>
+                <p class="about-description">
+                    En Zenith Gimnasio, creemos que cada persona merece alcanzar su mejor versión. Nuestro gimnasio está
+                    equipado con tecnología de punta y entrenadores certificados que te guiarán en cada paso de tu
+                    transformación.
+                    Con instalaciones modernas, clases variadas y un ambiente motivador, estamos comprometidos en
+                    ayudarte a
+                    lograr tus metas de salud y fitness.
+                </p>
+                <button class="cta-button" onclick="window.location.href='contacto.html'">
+                    Únete Ahora <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="about-image-container">
+                <img src="imgenes/DSC_0428.jpeg" alt="Instalaciones Zenith Gimnasio" class="about-image">
+            </div>
         </div>
     </section>
 
@@ -171,43 +249,126 @@
         </div>
     </div>
 
-    <section id="planes">
-        <h2>Nuestros Planes</h2>
-        <div class="pricing-table">
-            <div class="pricing-card">
-                <h3>Básico</h3>
-                <div class="price">S/.80<span>/mes</span></div>
-                <ul>
-                    <li>Acceso al gimnasio</li>
-                    <li>Vestuarios y duchas</li>
-                    <li>Asesoría inicial</li>
-                    <li>Horario flexible</li>
-                </ul>
-                <button class="cta-button">Elegir Plan</button>
+    <!-- Plans Section (Phoenix-style Accordion) -->
+    <!-- Intro Section -->
+    <section class="plans-intro-section">
+        <div class="plans-intro-grid">
+            <div>
+                <h2 class="plans-intro-title">Prepárate Para <span class="highlight">Alcanzar Tus Metas</span></h2>
             </div>
-            <div class="pricing-card featured">
-                <h3>Premium</h3>
-                <div class="price">S/.150<span>/mes</span></div>
-                <ul>
-                    <li>Todo lo del plan básico</li>
-                    <li>Clases grupales ilimitadas</li>
-                    <li>Entrenador personal 2x/mes</li>
-                    <li>Acceso a spa y sauna</li>
-                    <li>Plan nutricional</li>
-                </ul>
-                <button class="cta-button">Elegir Plan</button>
+            <div>
+                <p class="plans-intro-description">
+                    Ofrecemos planes diseñados para cada tipo de deportista. Ya sea que estés comenzando tu viaje
+                    fitness
+                    o seas un atleta experimentado, tenemos el plan perfecto para ti. Elige el que mejor se adapte a
+                    tus objetivos y comienza tu transformación hoy.
+                </p>
             </div>
-            <div class="pricing-card">
-                <h3>Elite</h3>
-                <div class="price">S/.200<span>/mes</span></div>
-                <ul>
-                    <li>Todo lo del plan premium</li>
-                    <li>Entrenador personal ilimitado</li>
-                    <li>Masajes deportivos</li>
-                    <li>Acceso 24/7</li>
-                    <li>Invitado gratis</li>
-                </ul>
-                <button class="cta-button">Elegir Plan</button>
+        </div>
+    </section>
+
+    <!-- Accordion Plans Section (Desktop) -->
+    <section class="plans-accordion-section" id="planes">
+        <div class="accordion-container">
+            <!-- Plan Básico -->
+            <div class="accordion-item" style="background-image: url('imgenes/DSC_0412.jpeg');">
+                <div class="accordion-content">
+                    <h3 class="accordion-title">Plan Básico</h3>
+                    <div class="accordion-description">
+                        <p><strong>S/.80/mes</strong></p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>✓ Acceso al gimnasio</li>
+                            <li>✓ Vestuarios y duchas</li>
+                            <li>✓ Asesoría inicial</li>
+                            <li>✓ Horario flexible</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn" onclick="window.location.href='contacto.html'">
+                        Elegir Plan <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="accordion-item active" style="background-image: url('imgenes/DSC_0428.jpeg');">
+                <div class="accordion-content">
+                    <h3 class="accordion-title">Plan Premium</h3>
+                    <div class="accordion-description">
+                        <p><strong>S/.150/mes</strong> - ¡Más Popular!</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>✓ Todo lo del plan básico</li>
+                            <li>✓ Clases grupales ilimitadas</li>
+                            <li>✓ Entrenador personal 2x/mes</li>
+                            <li>✓ Acceso a spa y sauna</li>
+                            <li>✓ Plan nutricional</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn" onclick="window.location.href='contacto.html'">
+                        Elegir Plan <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plan Elite -->
+            <div class="accordion-item" style="background-image: url('imgenes/DSC_0402.jpeg');">
+                <div class="accordion-content">
+                    <h3 class="accordion-title">Plan Elite</h3>
+                    <div class="accordion-description">
+                        <p><strong>S/.200/mes</strong> - ¡Todo Incluido!</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>✓ Todo lo del plan premium</li>
+                            <li>✓ Entrenador personal ilimitado</li>
+                            <li>✓ Masajes deportivos</li>
+                            <li>✓ Acceso 24/7</li>
+                            <li>✓ Invitado gratis</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn" onclick="window.location.href='contacto.html'">
+                        Elegir Plan <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Version (Stacked Cards) -->
+        <div class="accordion-mobile">
+            <div class="accordion-mobile-item" style="background-image: url('imgenes/DSC_0412.jpeg');">
+                <div class="accordion-mobile-content">
+                    <h3 class="accordion-mobile-title">Plan Básico</h3>
+                    <p class="accordion-mobile-description">
+                        <strong>S/.80/mes</strong> - Acceso al gimnasio, vestuarios, duchas, asesoría inicial y horario
+                        flexible.
+                    </p>
+                    <button class="accordion-btn" onclick="window.location.href='contacto.html'">
+                        Elegir Plan <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="accordion-mobile-item" style="background-image: url('imgenes/DSC_0428.jpeg');">
+                <div class="accordion-mobile-content">
+                    <h3 class="accordion-mobile-title">Plan Premium</h3>
+                    <p class="accordion-mobile-description">
+                        <strong>S/.150/mes</strong> - Todo del básico + clases grupales, entrenador personal, spa y plan
+                        nutricional.
+                    </p>
+                    <button class="accordion-btn" onclick="window.location.href='contacto.html'">
+                        Elegir Plan <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="accordion-mobile-item" style="background-image: url('imgenes/DSC_0402.jpeg');">
+                <div class="accordion-mobile-content">
+                    <h3 class="accordion-mobile-title">Plan Elite</h3>
+                    <p class="accordion-mobile-description">
+                        <strong>S/.200/mes</strong> - Todo incluido: entrenador ilimitado, masajes, acceso 24/7 e
+                        invitado gratis.
+                    </p>
+                    <button class="accordion-btn" onclick="window.location.href='contacto.html'">
+                        Elegir Plan <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -245,39 +406,23 @@
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Únete Ahora</h2>
-        <div class="form-container">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre Completo</label>
-                    <input type="text" id="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" required>
-                </div>
-                <div class="form-group">
-                    <label for="plan">Plan de Interés</label>
-                    <select id="plan" required>
-                        <option value="">Selecciona un plan</option>
-                        <option value="basico">Básico - S/.80/mes</option>
-                        <option value="premium">Premium - S/.150/mes</option>
-                        <option value="elite">Elite - S/.200/mes</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje (Opcional)</label>
-                    <textarea id="mensaje" rows="4"></textarea>
-                </div>
-                <button type="submit" class="cta-button" style="width: 100%;">Enviar Solicitud</button>
-            </form>
+    <!-- Sección del Mapa -->
+    <section id="ubicacion" style="background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));">
+        <h2>📍 Nuestra Ubicación</h2>
+        <div class="map-container" style="border: none; padding-top: 0; margin-top: 0;">
+            <div class="map-wrapper">
+                <!-- Zenith Gimnasio - Huancayo, Perú -->
+                <iframe src="https://www.google.com/maps?q=-12.06125036479131,-75.2192706632659&output=embed"
+                    width="100%" height="450" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-light); font-size: 1rem;">
+                💡 Haz clic en "Ver mapa más grande" para obtener direcciones en tiempo real desde tu ubicación
+            </p>
         </div>
     </section>
+
 
     <footer>
         <div class="footer-content">
@@ -301,9 +446,23 @@
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#planes">Planes y Precios</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contáctanos</a></li>
+                    <li><a href="#horarios-section">Horarios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="objetivo.html">Nuestro Objetivo</a></li>
+                    <li><a href="disciplinas.html">Disciplinas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
                 </ul>
             </div>
 
@@ -334,6 +493,16 @@
     </footer>
 
     <script>
+        // Header scroll behavior (Phoenix-style)
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
         // Hero Slider functionality
         let currentHeroSlide = 0;
         const heroSlides = document.querySelectorAll('.hero-slide');
@@ -366,8 +535,41 @@
             goToHeroSlide(currentHeroSlide);
         }
 
+        function prevHeroSlide() {
+            currentHeroSlide = (currentHeroSlide - 1 + heroSlides.length) % heroSlides.length;
+            goToHeroSlide(currentHeroSlide);
+        }
+
         // Auto-advance hero slider
         setInterval(nextHeroSlide, 5000);
+
+        // Touch support for hero slider (swipe)
+        let heroTouchStartX = 0;
+        let heroTouchEndX = 0;
+
+        heroSlider.addEventListener('touchstart', (e) => {
+            heroTouchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        heroSlider.addEventListener('touchend', (e) => {
+            heroTouchEndX = e.changedTouches[0].screenX;
+            handleHeroSwipe();
+        }, { passive: true });
+
+        function handleHeroSwipe() {
+            const swipeThreshold = 50; // Minimum swipe distance
+            const diff = heroTouchStartX - heroTouchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swiped left - next slide
+                    nextHeroSlide();
+                } else {
+                    // Swiped right - previous slide
+                    prevHeroSlide();
+                }
+            }
+        }
 
         // Slider functionality
         let currentSlide = 0;
