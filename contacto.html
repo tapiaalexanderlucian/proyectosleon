@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Zenith Gimnasio</title>
+    <link rel="icon" type="image/png" href="imgenes/favicon-circle.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'"
+            style="flex-shrink: 0; display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <img src="imgenes/Captura de pantalla 2026-01-23 175220.png" alt="Zenith Gimnasio"
+                style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">Zenith Gimnasio
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#galeria">Galería</a></li>
+            <li><a href="index.html#planes">Planes</a></li>
+            <li><a href="index.html#testimonios">Testimonios</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="index.html#inicio"><i class="fa-solid fa-house menu-icon"></i> Inicio</a></li>
+            <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users menu-icon"></i> Sobre Nosotros</a></li>
+            <li><a href="objetivo.html"><i class="fa-solid fa-bullseye menu-icon"></i> Nuestro Objetivo</a></li>
+            <li><a href="index.html#planes"><i class="fa-solid fa-gem menu-icon"></i> Planes</a></li>
+            <li><a href="disciplinas.html"><i class="fa-solid fa-dumbbell menu-icon"></i> Disciplinas</a></li>
+        </ul>
+        <button class="login-button" onclick="alert('Sistema de ingreso próximamente')"
+            style="flex-shrink: 0;">Ingresar</button>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" style="flex-shrink: 0;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Sección de Contacto / Formulario -->
+    <section id="contacto" style="padding-top: calc(var(--header-height) + 4rem); margin-top: 0;">
+        <h2>Únete Ahora</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="plan">Plan de Interés</label>
+                    <select id="plan" required>
+                        <option value="">Selecciona un plan</option>
+                        <option value="basico">Básico - S/.80/mes</option>
+                        <option value="premium">Premium - S/.150/mes</option>
+                        <option value="elite">Elite - S/.200/mes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (Opcional)</label>
+                    <textarea id="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta-button" style="width: 100%;">
+                    Enviar Solicitud <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zenith Gimnasio</h3>
+                <p>Transforma tu cuerpo, transforma tu vida. Somos el gimnasio líder en Huancayo con las mejores
+                    instalaciones y entrenadores certificados.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" title="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/zenith_gymoficial/" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@wellnesszenith" target="_blank" title="TikTok"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#planes">Planes y Precios</a></li>
+                    <li><a href="index.html#horarios-section">Horarios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="objetivo.html">Nuestro Objetivo</a></li>
+                    <li><a href="disciplinas.html">Disciplinas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Huancayo, Perú</p>
+                <p><i class="fa-solid fa-clock"></i> Lun - Dom: 4:00 PM - 6:30 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zenith Gimnasio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinksMobile = document.getElementById('navLinksMobile');
+            const hamburger = document.getElementById('hamburger');
+            navLinksMobile.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('¡Gracias por tu interés! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
