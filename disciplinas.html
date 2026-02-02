@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas - Zenith Gimnasio</title>
+    <link rel="icon" type="image/png" href="imgenes/favicon-circle.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'"
+            style="flex-shrink: 0; display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <img src="imgenes/Captura de pantalla 2026-01-23 175220.png" alt="Zenith Gimnasio"
+                style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">Zenith Gimnasio
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="index.html#planes">Planes</a></li>
+            <li><a href="disciplinas.html" class="active">Disciplinas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="index.html#inicio"><i class="fa-solid fa-house menu-icon"></i> Inicio</a></li>
+            <li><a href="sobre-nosotros.html"><i class="fa-solid fa-users menu-icon"></i> Sobre Nosotros</a></li>
+            <li><a href="objetivo.html"><i class="fa-solid fa-bullseye menu-icon"></i> Nuestro Objetivo</a></li>
+            <li><a href="index.html#planes"><i class="fa-solid fa-gem menu-icon"></i> Planes</a></li>
+            <li><a href="disciplinas.html"><i class="fa-solid fa-dumbbell menu-icon"></i> Disciplinas</a></li>
+        </ul>
+        <button class="login-button" onclick="alert('Sistema de ingreso próximamente')"
+            style="flex-shrink: 0;">Ingresar</button>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" style="flex-shrink: 0;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero"
+        style="background: linear-gradient(135deg, rgba(26, 15, 8, 0.95), rgba(45, 24, 16, 0.9)), url('imgenes/DSC_0412.jpeg'); background-size: cover; background-position: center;">
+        <div class="page-hero-content">
+            <h1>Nuestras Disciplinas</h1>
+            <p>Encuentra el entrenamiento perfecto para ti</p>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section style="padding: 5rem 5%; background: var(--darker-color); text-align: center;">
+        <div class="content-container">
+            <span class="about-badge">💪 Variedad de Entrenamientos</span>
+            <h2 class="about-title" style="text-align: center; margin: 2rem 0;">
+                Descubre Tu <span class="highlight">Disciplina Perfecta</span>
+            </h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8; color: var(--text-light);">
+                En Zenith Gimnasio ofrecemos una amplia variedad de disciplinas y modalidades de entrenamiento para que
+                encuentres la que mejor se adapte a tus objetivos y preferencias.
+            </p>
+        </div>
+    </section>
+
+    <!-- Disciplinas Grid -->
+    <section style="padding: 5rem 5%; background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));">
+        <div class="disciplines-grid">
+            <!-- Musculación -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h3>Musculación</h3>
+                <p>Desarrolla fuerza y masa muscular con nuestro equipo de última generación. Entrenadores
+                    especializados te guiarán en cada ejercicio.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Equipamiento profesional</li>
+                    <li>✓ Rutinas personalizadas</li>
+                    <li>✓ Supervisión de expertos</li>
+                </ul>
+            </div>
+
+            <!-- CrossFit -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-person-running"></i>
+                </div>
+                <h3>CrossFit</h3>
+                <p>Entrenamientos de alta intensidad que combinan levantamiento de pesas, gimnasia y ejercicios
+                    cardiovasculares.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Clases grupales motivadoras</li>
+                    <li>✓ WODs variados</li>
+                    <li>✓ Comunidad activa</li>
+                </ul>
+            </div>
+
+            <!-- Cardio -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3>Cardio</h3>
+                <p>Mejora tu resistencia cardiovascular con nuestras máquinas de última tecnología y clases dinámicas.
+                </p>
+                <ul class="discipline-benefits">
+                    <li>✓ Zona cardio completa</li>
+                    <li>✓ Spinning y aeróbicos</li>
+                    <li>✓ Monitoreo de frecuencia</li>
+                </ul>
+            </div>
+
+            <!-- Funcional -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <h3>Entrenamiento Funcional</h3>
+                <p>Ejercicios que mejoran tu fuerza, equilibrio y movilidad para actividades cotidianas.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Movimientos naturales</li>
+                    <li>✓ Mejora la postura</li>
+                    <li>✓ Prevención de lesiones</li>
+                </ul>
+            </div>
+
+            <!-- Yoga -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+                <h3>Yoga & Pilates</h3>
+                <p>Encuentra el equilibrio entre cuerpo y mente con nuestras clases de yoga y pilates.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Flexibilidad mejorada</li>
+                    <li>✓ Reducción de estrés</li>
+                    <li>✓ Fortalecimiento del core</li>
+                </ul>
+            </div>
+
+            <!-- Boxeo -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-hand-fist"></i>
+                </div>
+                <h3>Boxeo & Artes Marciales</h3>
+                <p>Libera el estrés y mejora tu condición física con clases de boxeo y artes marciales.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Técnica profesional</li>
+                    <li>✓ Cardio intenso</li>
+                    <li>✓ Autodefensa práctica</li>
+                </ul>
+            </div>
+
+            <!-- Spinning -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-bicycle"></i>
+                </div>
+                <h3>Spinning</h3>
+                <p>Clases de ciclismo indoor con música motivadora y entrenamientos desafiantes.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Quema calorías rápido</li>
+                    <li>✓ Ambiente energético</li>
+                    <li>✓ Todos los niveles</li>
+                </ul>
+            </div>
+
+            <!-- Zumba -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <h3>Zumba & Baile</h3>
+                <p>Diviértete mientras haces ejercicio con nuestras clases de baile y zumba.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Diversión garantizada</li>
+                    <li>✓ Ritmos latinos</li>
+                    <li>✓ Ejercicio completo</li>
+                </ul>
+            </div>
+
+            <!-- Personal Training -->
+            <div class="discipline-card">
+                <div class="discipline-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3>Entrenamiento Personal</h3>
+                <p>Sesiones one-on-one con entrenadores certificados para alcanzar tus objetivos específicos.</p>
+                <ul class="discipline-benefits">
+                    <li>✓ Atención personalizada</li>
+                    <li>✓ Planes a medida</li>
+                    <li>✓ Resultados garantizados</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios de Clases -->
+    <section style="padding: 5rem 5%; background: var(--darker-color);">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Horarios de Clases Grupales</h2>
+        <div class="schedule-info" style="max-width: 1000px; margin: 0 auto;">
+            <div class="schedule-card">
+                <h3><i class="fa-solid fa-clock"></i> Lunes a Viernes</h3>
+                <p>Clases cada hora de 6:00 AM a 9:00 PM</p>
+            </div>
+            <div class="schedule-card">
+                <h3><i class="fa-solid fa-calendar-week"></i> Fines de Semana</h3>
+                <p>Horarios especiales: 8:00 AM, 10:00 AM, 4:00 PM, 6:00 PM</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 2rem;">
+                ¿Quieres conocer el horario completo de clases?
+            </p>
+            <button class="cta-button" onclick="window.location.href='contacto.html'">
+                Solicitar Información <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+        style="padding: 5rem 5%; background: linear-gradient(135deg, var(--primary-color), var(--light-color)); text-align: center;">
+        <h2
+            style="color: #2d1810; margin-bottom: 1.5rem; font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); position: relative; z-index: 10;">
+            ¿Listo
+            para Comenzar?</h2>
+        <p
+            style="color: #1a0f08; margin-bottom: 2rem; font-size: 1.2rem; font-weight: 700; position: relative; z-index: 10;">
+            Prueba nuestras
+            disciplinas y
+            encuentra tu pasión</p>
+        <button class="cta-button" onclick="window.location.href='contacto.html'"
+            style="background: #3d2414; color: var(--primary-color);">
+            Prueba Gratis <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Zenith Gimnasio</h3>
+                <p>Transforma tu cuerpo, transforma tu vida.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/zenith_gymoficial/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@wellnesszenith" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="objetivo.html">Nuestro Objetivo</a></li>
+                    <li><a href="disciplinas.html">Disciplinas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Huancayo, Perú</p>
+                <p><i class="fa-solid fa-clock"></i> Lun - Dom: 4:00 PM - 6:30 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zenith Gimnasio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleMenu() {
+            const navLinksMobile = document.getElementById('navLinksMobile');
+            const hamburger = document.getElementById('hamburger');
+            navLinksMobile.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
